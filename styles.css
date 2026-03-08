@@ -40,6 +40,7 @@ body {
   top: 0;
   height: 100vh;
   background: var(--bg-alt);
+  border-left: 1px solid var(--border);
   border-right: 1px solid var(--border);
   padding: 32px 24px 24px;
   display: flex;
@@ -143,7 +144,10 @@ nav a.active .nav-num { color: rgba(255,255,255,0.6); }
 }
 
 /* ─── MAIN ───────────────────────────────────────── */
-.main { padding: 0; }
+.main {
+  padding: 0;
+  border-right: 1px solid var(--border);
+}
 
 section {
   padding: 60px 64px;
