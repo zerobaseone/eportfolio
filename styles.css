@@ -287,6 +287,19 @@ section:last-child { border-bottom: none; }
   section { padding: 52px 36px; }
 }
 
+/* ── Video embed ─────────────────────────────── */
+.video-embed {
+  width: 100%;
+  max-width: 800px;
+  margin: 1.2rem 0;
+}
+.video-embed iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
 @media (max-width: 640px) {
   section { padding: 40px 22px; }
   .sec-title { font-size: 2.1rem; }
