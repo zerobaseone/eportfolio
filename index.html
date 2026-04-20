@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="data:,">
   <title>Madeline Loy · ePortfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +16,14 @@
 <body>
   <div class="layout">
 
-    <!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
+    <!--  SIDEBAR  -->
     <aside class="sidebar">
       <div class="sidebar-brand">
         <div class="profile-photo">
-          <svg class="photo-placeholder" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          <svg class="photo-placeholder" width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="1">
           </svg>
-          <img src="photo.jpg" alt="" onerror="this.style.display='none'">
+          <img src="profile.jpg" alt="Madeline Loy" onerror="this.style.display='none'">
         </div>
         <div class="sidebar-name">Madeline Loy</div>
         <div class="sidebar-subtitle">CS-499 Portfolio</div>
@@ -65,10 +64,10 @@
       </div>
     </aside>
 
-    <!-- ═══ MAIN ══════════════════════════════════════════ -->
+    <!--  MAIN  -->
     <main class="main">
 
-      <!-- ── WELCOME ──────────────────────────────────────── -->
+      <!--  WELCOME  -->
       <section id="welcome">
         <div class="eyebrow">
           <span class="sec-tag">i</span>
@@ -77,17 +76,14 @@
         <h1 class="sec-title">Welcome</h1>
         <div class="sec-body">
           <p>
-            Hello! My name is Madeline.
-          </p>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
+            Hello! My name is Madeline. I’m a library professional of eight years finishing a Computer Science degree
+            with a specialization in Data Analytics and a minor in Applied Mathematics. This portfolio is the capstone
+            of that program - three enhancements across two projects.
           </p>
         </div>
       </section>
 
-      <!-- ── SELF-ASSESSMENT ─────────────────────────────── -->
+      <!--  PROFESSIONAL SELF-ASSESSMENT  -->
       <section id="self-assessment">
 
         <div class="eyebrow">
@@ -97,23 +93,96 @@
         <h1 class="sec-title">Professional <em>Self-Assessment</em></h1>
         <div class="sec-body">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+            I began the Computer Science program in February 2023, and I'm finishing it in April 2026. Completing this
+            program alongside my library work has been tough but fulfilling. The coursework I did throughout this program gave me the formal
+            education in computer science, while my day job helped me apply those concepts to real problems.
           </p>
           <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
+            <strong>Collaborating in a team environment.</strong> Most of my coursework was completed independently,
+            but collaboration showed up. In CS-405 Secure Coding, a peer review exercise required me
+            to critique another student's code for vulnerabilities and communicate my findings, which is a sensitive
+            skill that is different from writing code. In my library role, I collaborate daily with various teams from IT to marketing, where decisions need to be explained to
+            people with different technical backgrounds. I carried that habit into my capstone work - in
+            the FragranceDNA Jupyter notebook, every major decision is documented in plain language, so
+            even those from nontechnical backgrounds can follow my reasoning. Good documentation is important for future
+            team members that weren't there for the original conversation - or your future self several months from now!
           </p>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            <strong>Communicating with stakeholders.</strong> Library patrons are the stakeholders I've been
+            accountable to for eight years, and that experience has made respectful, plain language communication and
+            accessibility core values of
+            mine. I regularly explain database search
+            logic, research tools, and topics in Excel to people with very different abilities and technical
+            backgrounds.
+            In my capstone work, I applied this to the portfolio itself, considering the user experience of both a
+            technical professional and a general visitor. I applied accessibilty to The Loop by ensuring Android
+            accessibility guideines were followed, considered the overall user experience, and ensured all strings are
+            easily localizable, for translation into
+            other languages.
+            I designed the FragranceDNA demo from the ground up to
+            be approachable without any perfumery knowledge. In CS-250 Software Development Lifecycle, I
+            also practiced writing user stories, which taught me to consider technical decisions
+            from a stakeholder's perspective.
           </p>
+          <p>
+            <strong>Data structures and algorithms.</strong> CS-300 (Data Structures and Algorithms) was a favorite
+            class of mine,
+            covering hash maps, binary search trees, sorting algorithms, and complexity analysis, concepts I
+            applied directly in my FragranceDNA when I replaced an O(n) linear search with an O(1) dictionary lookup,
+            achieving a 25x speedup on matrix construction. MAT-350 Applied Linear Algebra introduced me to the
+            matrix operations that I built upon later in a recommender system context: I researched TF-IDF
+            weighting, cosine similarity, and non-negative matrix factorization through Aggarwal's
+            <em>Recommender Systems: The Textbook</em> beyond what any coursework covered. DAT-325 Data Validation:
+            Quality and Cleaning gave me a framework for that project via the use of Jupyter Notebook to quickly iterate
+            on data cleaning and algorithmic decisions, something I put to work manually cleaning over 1,600 fragrance
+            note variants.
+          </p>
+          <p>
+            <strong>Software engineering and databases.</strong> CS-360 Mobile Architecture and Programming was the
+            origin of The Loop, which gave me a foundation in Android mobile development. My professional experience
+            with
+            PostgreSQL meant the transition to Firebase Firestore was new and interesting, but I also worked with
+            MongoDB in CS-465 Full Stack Development, which
+            gave me the idea to use a NoSQL database like Firestore for the capstone for quickly iterating on app ideas
+            that don't need to commit to a strict relational schema.
+          </p>
+          <p>
+            <strong>Security.</strong> Security is an area where my library values and my computer science education
+            overlap.
+            Libraries are based on trust; patrons share research interests, health questions, and other personal
+            information with reference desk staff, and we are ethically obligated to protect that information. In the
+            capstone, this showed up as
+            a deliberate choice to use Firebase
+            Authentication rather than rolling my own login system. Researching the difference between hashing
+            algorithms (and deciding the manual implementation I had originally planned was
+            actually less secure than letting Firebase handle it) was a practical expression of the security
+            mindset the program asks for.
+          </p>
+          <p>
+            Though my library work informs my approach to development, for the capstone I chose projects from outside my
+            library science comfort zone, built around personal
+            interests: the Chicago music scene and perfumery. Choosing subjects I genuinely care about made me a
+            more engaged developer and helped me think of practical applications for the skills I was learning. The
+            portfolio features enhancements
+            across two projects in three areas: software design and engineering, algorithms and data structures, and
+            databases.
+          </p>
+          <p>The two projects are:</p>
+          <ul>
+            <li>
+              <b>The Loop</b>, an Android app written in Java built around Chicago's live music scene. It features
+              secure account creation and login through Firebase Authentication and pulls from real event data via
+              the Ticketmaster Discovery API.
+            </li>
+            <li>
+              <b>FragranceDNA</b>, a fragrance recommender system built on a dataset of 24,000 fragrances that
+              draws on applied linear algebra, data structures and algorithms, and careful data cleaning.
+            </li>
+          </ul>
         </div>
       </section>
 
-      <!-- ── CODE REVIEW ──────────────────────────────────── -->
+      <!--  CODE REVIEW  -->
       <section id="code-review">
         <div class="eyebrow">
           <span class="sec-tag">iii</span>
@@ -133,7 +202,7 @@
         </div>
       </section>
 
-      <!-- ── SOFTWARE DESIGN ─────────────────────────────── -->
+      <!--  SOFTWARE DESIGN  -->
       <section id="software-design">
         <div class="eyebrow">
           <span class="sec-tag">iv</span>
@@ -142,30 +211,63 @@
 
         <h2 class="sec-title">Artifact <em>One</em> - Software Design &amp; Engineering</h2>
         <div class="sec-body">
+          <p>GitHub Repository: <a href="https://github.com/zerobaseone/TheLoop" target="_blank">The Loop</a></p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
-          <p>
-            <strong>Narrative:</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            This project began as a simple event-tracking CRUD app for the class CS-360 Mobile Architecture. While it
+            fulfilled the requirements for that class, there were several issues preventing it from being a fully
+            realized app: First of all, the user login details and database of events were SQLite databases, with login
+            details stored in plaintext. There were also several issues with the separation of concerns, where the UI
+            layer could interact directly with the database. Finally, there was stub code for a SMS notification system
+            that was incorrectly implemented. While there was significant overlap with the third enhancement
+            (databases), I was careful to keep the scope of this enhancement solely focused on the app’s architecture.
           </p>
         </div>
 
         <div class="card">
-          <div class="card-title">Improvements</div>
+          <div class="card-title">Enhancements:</div>
           <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Sed do eiusmod tempor incididunt</li>
-            <li>Ut labore et dolore magna aliqua</li>
+            <li>Replaced a flawed plaintext SQLite login system with a more secure Firebase Authentication system </li>
+            <li>Architectural improvements like replacing direct database calls in the UI layer with a repository for
+              better separation of concerns</li>
+            <li>Replaced incomplete/deprecated SMS notification code with local push notifications</li>
           </ul>
+        </div>
+
+        <div class="sec-body" style="margin-top:36px;">
+
+          <p>
+            <strong>Why I selected it.</strong> I chose The Loop because I built it from scratch. It's relevant to my
+            interests, not from a template, and it's relevant to an industry I care about. More
+            importantly, it had clear, concrete weaknesses I wanted to fix. The plaintext credential storage was
+            weighing on me - storing passwords in a SQLite database with no hashing is a security vulnerability
+            that would be unacceptable in any real deployment. Beyond security, the app had architectural issues that I
+            didn't fully realize as a novice developer earlier on in the program:
+            UI activities were interacting directly with the database instead of going through a data layer, making
+            the code harder to test and maintain. I replaced the SQLite login with Firebase Authentication,
+            which handles password hashing, rate limiting, and session management without the app
+            storing a credential itself. I also created a new <code>EventRepository</code> class as the
+            single point of access to the database, so that every activity and adapter talks to the repository
+            rather than opening its own database connection. Finally, I removed the deprecated SMS notification
+            stub and replaced it with working push notifications. My skills demonstrated here include secure
+            authentication, software architecture, and Android development.
+          </p>
+          <p>
+            <strong>Reflection.</strong> My original enhancement plan described a manual SHA-256 hash-and-salt
+            implementation, and I had to revise that plan after research. SHA-256 is not recommended for modern
+            password hashing. It is too fast, making it easier to brute-force, and Firebase's built-in
+            authentication uses bcrypt along with rate limiting and session expiration. Choosing Firebase over my
+            original plan was
+            a demonstration of a security mindset: setting aside my own design in
+            favor of what was actually best for the application and its users. The other challenge was managing
+            scope between this enhancement and the databases enhancement. There is significant overlap between tthe two
+            enhancements and I was
+            careful to keep this module focused specifically on authentication and separation of concernsrather
+            than the data model itself.
+          </p>
         </div>
       </section>
 
-      <!-- ── ALGORITHMS ──────────────────────────────────── -->
+      <!--  ALGORITHMS  -->
       <section id="algorithms">
         <div class="eyebrow">
           <span class="sec-tag">v</span>
@@ -173,30 +275,100 @@
         </div>
         <h2 class="sec-title">Artifact <em>Two</em> - Algorithms &amp; Data Structures</h2>
         <div class="sec-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+          <p>GitHub Repository: <a href="https://github.com/zerobaseone/FragranceDNA" target="_blank">FragranceDNA</a>
           </p>
           <p>
-            <strong>Narrative:</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            FragranceDNA solves a practical problem: people new to perfumery often struggle to articulate what they like
+            beyond naming specific fragrances that they enjoy. This project addresses that in two ways – given a
+            fragrance that the user enjoys, it returns a ranked list of similar fragrances, and it identifies which
+            categories best describe their taste, giving users a vocabulary to use when exploring the world of
+            fragrance.
+          </p>
+          <p> This project was based on coursework from DAT-325 (Data Validation: Quality and Cleaning) and MAT-350
+            (Applied Linear Algebra), and was influenced by my own independent research, particularly Aggarwal’s
+            <i>Recommender Systems: The Textbook</i>, from which I developed the approach of TF-IDF weighting and cosine
+            similarity. The nonnegative matrix factorization (NMF) aspect brings the project into machine learning
+            territory, where the algorithm independently discovers 15 distinct fragrance ‘archetypes’, which I then
+            interpreted and named based on my own knowledge of perfumery.
           </p>
         </div>
 
         <div class="card">
-          <div class="card-title">Improvements</div>
+          <div class="card-title">Enhancements:</div>
           <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Sed do eiusmod tempor incididunt</li>
-            <li>Ut labore et dolore magna aliqua</li>
+            <li>Cleaned the dataset scraped from Fragrantica.com, addressing capitalization issues and dashes and fixing
+              40 note variants (misspellings, synonyms, and regional variants)</li>
+            <li>Improved matrix construction from an O(n) linear search to O(1) dictionary lookup, achieving a 25x
+              speedup in creating the original fragrance x note matrix</li>
+            <li>Replaced a basic Jaccard similarity algorithm with TF-IDF weighting and cosine similarity, better
+              handling fragrances with different numbers of notes</li>
+            <li>Implemented non-negative matrix factorization at k=15 to discover fragrance archetypes</li>
+            <li>Deployed the entire system as an interactable, browser-based recommender using Pyodide (Python via
+              WebAssembly), without the need for a backend server</li>
           </ul>
+        </div>
+
+        <div class="sec-body" style="margin-top:36px;">
+
+          <p>
+            <strong>Why I selected it.</strong> I selected FragranceDNA as a personal project containing the
+            skills I'm most proud of: applied mathematics, data quality work, and my strong research skills as a
+            librarian.
+            For the data layer, I manually reviewed over 1,600 unique fragrance notes in Excel, correcting 40 note
+            variants including misspellings, synonyms, and regional alternatives before writing any cleaning code. I
+            replaced an O(n) linear search through a list of notes with an O(1) dictionary
+            hash map lookup, achieving a 25x speedup in matrix construction. I also replaced a basic Jaccard
+            similarity metric with TF-IDF weighting and cosine similarity, which handles fragrances with
+            different numbers of notes more fairly. Finally, I applied non-negative matrix factorization at k=15
+            to let the algorithm discover 15 distinct fragrance archetypes independently, which I then looked through
+            and named using my own knowledge of perfumery. Deploying the entire system as a browser-based demo
+            using Pyodide required a lot of additional research and trade offs — the NMF
+            decomposition was too memory-intensive to run in-browser, so I precomputed the W matrix and saved it
+            as JSON, while cosine similarity and TF-IDF weighting run in the browser.
+          </p>
+          <p>
+            <strong>Reflection.</strong> Implementing the recommender as a browser-based demo was the biggest
+            challenge of this enhancement. Before the capstone, I had a very clear vision of the algorithm but no
+            idea how to make it usable by other people beyond sending them a csv file and a Jupyter notebook. Pyodide,
+            which runs Python via WebAssembly,
+            solved the backend problem, but getting sklearn's NMF to run in-browser proved to be too memory intense even
+            for a decent gaming computer. Precomputing the NMF decomposition was the trade-off I decided on, even though
+            it
+            meant
+            the browser demo doesn't run that step live. I also made two changes to the algorithm
+            itself after testing: I excluded vague "X notes" descriptors (like "woody notes," "floral notes")
+            from the NMF step because they were grouping fragrances by the vague descriptions
+            rather than by actual similarity, and I raised k from 4 to 15 to produce better archetypes for a beginner
+            audience.
+          </p>
+        </div>
+
+        <div id="recommender" class="fragrance-demo">
+          <h3 class="sec-title fragrance-demo-title">Fragrance<em>DNA</em></h3>
+          <div class="sec-body">
+            <p>
+              As part of this artifact, I deployed the system as an interactive demo. The widget below runs
+              client-side via Pyodide so you can interact with the project directly.
+            </p>
+            <p>Select a fragrance to get recommendations and your FragranceDNA!</p>
+            <p>Unfamiliar with fragrances? Try searching &quot;Sauvage by Dior&quot;.</p>
+
+            <div id="rec-controls">
+              <div id="rec-input-wrap">
+                <input type="text" id="rec-search" placeholder="Search for a fragrance..." autocomplete="off">
+                <div id="rec-dropdown"></div>
+              </div>
+              <div id="rec-selected"></div>
+              <button id="rec-go" disabled>Get Recommendations</button>
+            </div>
+
+            <div id="rec-status"></div>
+            <div id="rec-results"></div>
+          </div>
         </div>
       </section>
 
-      <!-- ── DATABASES ───────────────────────────────────── -->
+      <!--  DATABASES  -->
       <section id="databases">
         <div class="eyebrow">
           <span class="sec-tag">vi</span>
@@ -204,33 +376,62 @@
         </div>
         <h2 class="sec-title">Artifact <em>Three</em> - Databases</h2>
         <div class="sec-body">
+          <p>GitHub Repository: <a href="https://github.com/zerobaseone/TheLoop" target="_blank">The Loop</a></p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
-          <p>
-            <strong>Narrative:</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            Revisiting The Loop for the final enhancement, I made significant improvements to the database. As my choice
+            for migrating from SQLite, I chose Firebase Firestore to round out my database experience. Most of my
+            professional work is with Postgres, and I was curious about the document model because it has overlap with
+            how metadata records are structured and because it suits nascent projects that don't yet need a strict
+            relational schema.
           </p>
         </div>
 
         <div class="card">
-          <div class="card-title">Database Changes</div>
+          <div class="card-title">Enhancements:</div>
           <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Sed do eiusmod tempor incididunt</li>
-            <li>Ut labore et dolore magna aliqua</li>
+            <li>Migrated the database backend from two separate SQLite databases to a unified Firebase Firestore
+              database (a NoSQL document model)</li>
+            <li>Redesigned the data model to include a user-event association to enable features like event reminders
+              and a history tab</li>
+            <li>Seeded the database with real event data from Ticketmaster's Discovery API</li>
           </ul>
+        </div>
+
+        <div class="sec-body" style="margin-top:36px;">
+
+          <p>
+            <strong>Why I selected it.</strong> I chose Firestore deliberately rather than defaulting to a
+            relational database because most of my professional work is already in PostgreSQL, and I wanted to
+            build real experience with a document model. I found that the document model suits early-stage app
+            development
+            well which matters when you are quickly iterating on an app's design and data needs. The Ticketmaster
+            integration demonstrates use of a real production API. Though I was limited with the free tier, I successfully seeded the database with thousands of events.  The
+            skills demonstrated here include document data modeling, schema design,
+            third-party API integration, and pagination.
+          </p>
+          <p>
+            <strong>Reflection.</strong> The biggest challenge was the gap between what the original CS-360 app
+            needed and what a real multi-user app requires. The original was designed around a few hard coded events.
+            Scaling to thousands of events meant rethinking almost everything. How many events
+            should load at once? Should the list paginate or infinite-scroll and how does that affect app performance?
+            What happens to events once
+            they've passed? Where do users find the events they've starred? Can users submit their own events,
+            and if so, how is that moderated? These questions came up in the planning stage of this enhancement, and
+            answering them
+            required a bit of restructuring. The "history" tab became "my events" showing
+            upcoming starred events rather than past ones because upcoming events are more useful
+            to a user. I also had to lay the groundwork for the first enhancement (authentication and the
+            EventRepository layer) before this enhancement could be built on top of it, which made the sequence of these
+            two enhancements importnat to think through.
+          </p>
         </div>
       </section>
 
     </main>
   </div>
 
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.27.5/full/pyodide.js"></script>
+  <script src="recommender.js"></script>
 </body>
 
 </html>

@@ -51,8 +51,8 @@ body {
 .sidebar-brand { margin-bottom: 18px; }
 
 .sidebar-brand .profile-photo {
-  width: 98px;
-  height: 98px;
+  width: 132px;
+  height: 132px;
   border-width: 2px;
   margin-bottom: 14px;
 }
@@ -208,6 +208,12 @@ section:last-child { border-bottom: none; }
 
 .sec-body p + p { margin-top: 16px; }
 
+.sec-body ul {
+  margin: 14px 0 0;
+  padding-left: 1.35em;
+  list-style-position: outside;
+}
+
 .sec-body strong { color: var(--text); font-weight: 500; }
 
 /* ─── SKILL PILLS ────────────────────────────────── */
@@ -241,6 +247,7 @@ section:last-child { border-bottom: none; }
 .profile-photo img {
   position: absolute;
   inset: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -273,6 +280,16 @@ section:last-child { border-bottom: none; }
   line-height: 2.1;
 }
 
+.fragrance-demo {
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.fragrance-demo-title {
+  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+}
+
 /* ─── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 960px) {
   .layout { grid-template-columns: 1fr; }
@@ -299,6 +316,97 @@ section:last-child { border-bottom: none; }
   border-radius: 8px;
   border: 1px solid var(--border);
 }
+
+/* ─── RECOMMENDER ───────────────────────────────── */
+#rec-controls { margin-top: 20px; }
+
+#rec-input-wrap { position: relative; }
+
+#rec-search {
+  width: 100%;
+  padding: 10px 14px;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: white;
+  color: var(--text);
+}
+
+#rec-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 240px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  z-index: 10;
+}
+
+#rec-dropdown div {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--text-2);
+}
+
+#rec-dropdown div:hover { background: var(--bg-alt); }
+
+#rec-selected { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+
+.rec-tag {
+  font-size: 0.85rem;
+  padding: 5px 12px;
+  background: rgba(124,110,166,0.1);
+  color: var(--iris);
+  border: 1px solid rgba(124,110,166,0.2);
+  border-radius: 20px;
+}
+
+.rec-tag button {
+  background: none;
+  border: none;
+  color: var(--iris);
+  cursor: pointer;
+  margin-left: 6px;
+  font-size: 1rem;
+}
+
+#rec-go {
+  margin-top: 16px;
+  padding: 10px 24px;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: var(--iris);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#rec-go:disabled { opacity: 0.4; cursor: default; }
+
+#rec-status {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--text-3);
+}
+
+#rec-results { margin-top: 20px; }
+#rec-results .card + .card { margin-top: 20px; }
+#rec-results ol { padding-left: 20px; color: var(--text-2); font-size: 0.96rem; line-height: 2.1; }
+
+.dna-row { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.dna-label { width: 130px; flex-shrink: 0; white-space: nowrap; font-size: 0.85rem; font-weight: 500; color: var(--text-2); }
+.dna-bar-bg { flex: 1; height: 14px; background: var(--bg-alt); border-radius: 7px; overflow: hidden; }
+.dna-bar { height: 100%; background: var(--iris); border-radius: 7px; }
+.dna-pct { width: 45px; font-size: 0.8rem; color: var(--text-3); text-align: right; }
 
 @media (max-width: 640px) {
   section { padding: 40px 22px; }

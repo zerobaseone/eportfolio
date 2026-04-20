@@ -1,4 +1,4 @@
-/* ── NAV HIGHLIGHT ─────────────────────────────────── */
+/*  NAV HIGHLIGHT  */
 const sections = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('nav a');
 
